@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Info & Booking</title>
+  
+</head>
+<body>
+
+<header>
+    <h1>Explore the World with Us</h1>
+    <p>Discover amazing travel destinations and book your dream vacation today!</p>
+</header>
+
+<section>
+    <h2>Top Destinations</h2>
+    <ul>
+        <li><strong>Paris, France</strong> – Romantic city known for the Eiffel Tower and fine dining.</li>
+        <li><strong>Bali, Indonesia</strong> – Tropical paradise with beaches and vibrant culture.</li>
+        <li><strong>Tokyo, Japan</strong> – High-tech city with rich traditions and cuisine.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Travel Packages & Prices</h2>
+    <table border="5">
+        <tr>
+            <th>Destination</th>
+            <th>Duration</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr>
+            <td>Paris</td>
+            <td>5 Nights</td>
+            <td>1,200</td>
+        </tr>
+        <tr>
+            <td>Bali</td>
+            <td>7 Nights</td>
+            <td>1,500</td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>6 Nights</td>
+            <td>1,800</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Destination Preview</h2>
+    <img src="https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg" alt="paris" width="400" height="450">
+    <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg" alt="paris" width="400" height="450">
+    <img src="https://images.pexels.com/photos/3403098/pexels-photo-3403098.jpeg" alt="paris" width="400" height="450">
+</section>
+
+ <section>
+            <h2>Destination Video</h2>
+            <video controls width="400">
+                <source src="https://videos.pexels.com/video-files/30384291/13021411_1920_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+ </section>
+
+<section>
+    <h2>Book Your Trip</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="3">
+             <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+             <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Travel Details</legend>
+            <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="">--Choose a destination--</option>
+                <option value="paris">Paris</option>
+                <option value="bali">Bali</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+             <br><br>
+
+            <label for="date">Departure Date:</label>
+            <input type="date" id="date" name="date" required>
+             <br><br>
+
+            <label for="notes">Special Requests:</label>
+             <br><br>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any special requests..."></textarea>
+        </fieldset>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</section>
+
+</body>
+</html>
